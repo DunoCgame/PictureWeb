@@ -1,0 +1,18 @@
+:root{
+	--ColorBody:grey;
+	--ColorHeader:blue;
+		--ColorNavbar:blue;
+		--ColorNavbarButtonOpen:purple;
+		--ColorNavbarMovil:rgba(128, 0, 128,0.8);
+		--ColorSocial:purple;
+	--ColorMain:rgba(0,0,0,0.5);
+		--ColorSectionPostres:rgb(0,162,232);
+		--ColorSectionService:#8f00b3;
+		--ColorSectionInfoResposteros:#9933ff;
+	--ColorSidebar:#7300e6;
+	--ColorContact:#660066;
+	--ColorContactFrom:#8f00b3;
+	--ColorFooter:#8f00b3;
+	
+}
+

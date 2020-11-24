@@ -1,0 +1,62 @@
+
+
+.navbar-web-master{
+	
+	display:flex;
+	justify-content:center;
+	background:red;
+}
+
+.form-master{
+	padding:10px;
+
+}
+
+.delet{
+	color:white;
+	padding:4px;
+	background:blue;
+	font-weight:bold;
+	width:80px;
+}
+
+.grub-master{
+	background:rgba(0,0,0,0.4);
+}
+.Columns-master{
+	
+	display: grid;
+	grid-template-columns:repeat(4, 1fr);
+	grid-template-rows: repeat(auto);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;	
+	grid-template-areas:"cod FristName SeconName id";
+
+
+width:100%;
+margin-bottom:2px;
+background:white;
+}
+
+.Columns-master>label{
+	color:black;
+	font-weight:bold;
+	padding:2px;
+}
+
+.Columns-master>.Etiquetas{
+	font-size:20px;
+}
+
+.cod{
+	grid-area:cod;
+}
+.FristName{
+	grid-area:FristName;
+}
+.SeconName{
+	grid-area:SeconName;
+}
+.id{
+	grid-area:id;
+}
