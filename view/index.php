@@ -3,13 +3,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
     <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
-	<link rel="shortcut icon" href="asset/image/logo.png" >
-	<link rel="stylesheet"    href="asset/styles/iconos.css">
-	<link rel="stylesheet"    href="asset/styles/variables.css">
-	<link rel="stylesheet"    href="asset/styles/Normalize.css"> 
-	<link rel="stylesheet"    href="asset/styles/main.css"> 
-	<link rel="stylesheet"    href="asset/styles/grid.css">
-	<link rel="stylesheet"    href="asset/styles/mediaquery.css">
+	<link rel="shortcut icon" href="view/asset/image/logo.png" >
+	<link rel="stylesheet"    href="view/asset/styles/iconos.css">
+	<link rel="stylesheet"    href="view/asset/styles/variables.css">
+	<link rel="stylesheet"    href="view/asset/styles/Normalize.css"> 
+	<link rel="stylesheet"    href="view/asset/styles/main.css"> 
+	<link rel="stylesheet"    href="view/asset/styles/grid.css">
+	<link rel="stylesheet"    href="view/asset/styles/mediaquery.css">
 	<title>Picture</title>
 </head>
 <body id="body">
@@ -37,8 +37,8 @@
 										<a href="#">Link 3</a>
 									</div>
 							</li>
-							<li class="item"><a href="#Productos" class="link ">Login</a></li>
-							<li class="item"><a href="#Servicios" class="link">LoginOut</a></li>
+							<li class="item"><a href="../view/login.php" class="link ">Login</a></li>
+							<li class="item"><a href="register.php" class="link">LoginOut</a></li>
 							
 						</ul>
 				</div>
@@ -49,17 +49,17 @@
 			<div class="slideshow-container">
 					
 					<div class="mySlides fade">
-						<img src="asset/image/cake4.jpg" >
+						<img src="view/asset/image/cake4.jpg" >
 						<div class="text">Caption Text</div>
 					  </div>
 
 					  <div class="mySlides fade">
-						<img src="asset/image/cake4.jpg" >
+						<img src="view/asset/image/cake4.jpg" >
 						<div class="text">Caption Two</div>
 					  </div>
 
 					  <div class="mySlides fade">
-						<img src="asset/image/cake4.jpg" >
+						<img src="view/asset/image/cake4.jpg" >
 						<div class="text">Caption Three</div>
 					  </div>
 			</div>
@@ -70,7 +70,7 @@
 
 			<article class="Article-images">				
 					<figure class="Article-containner-images">
-						<img class="Img-Article" src="asset/image/cake4.jpg">
+						<img class="Img-Article" src="view/asset/image/cake4.jpg">
 					</figure>
 						<div class="Article-containner-text">					
 							<hgroup class="GroupTitle">
@@ -81,7 +81,7 @@
 							</p>	
 							<div class="Article-containner-user">
 								<div class="user"> 
-									<img class="icon-user-Article" src="asset/image/user.png">
+									<img class="icon-user-Article" src="view/asset/image/user.png">
 									<span class="name-user">Nombre</span>
 								</div>
 								
@@ -99,7 +99,7 @@
 			
 			<article class="Article-images">				
 					<figure class="Article-containner-images">
-						<img class="Img-Article" src="asset/image/cake4.jpg">
+						<img class="Img-Article" src="view/asset/image/cake4.jpg">
 					</figure>
 						<div class="Article-containner-text">					
 							<hgroup class="GroupTitle">
@@ -110,7 +110,7 @@
 							</p>	
 							<div class="Article-containner-user">
 								<div class="user"> 
-									<img class="icon-user-Article" src="asset/image/user.png">
+									<img class="icon-user-Article" src="view/asset/image/user.png">
 									<span class="name-user">Nombre</span>
 								</div>
 								
@@ -127,7 +127,7 @@
 			
 			<article class="Article-images">				
 					<figure class="Article-containner-images">
-						<img class="Img-Article" src="asset/image/cake4.jpg">
+						<img class="Img-Article" src="view/asset/image/cake4.jpg">
 					</figure>
 						<div class="Article-containner-text">					
 							<hgroup class="GroupTitle">
@@ -138,7 +138,7 @@
 							</p>	
 							<div class="Article-containner-user">
 								<div class="user"> 
-									<img class="icon-user-Article" src="asset/image/user.png">
+									<img class="icon-user-Article" src="view/asset/image/user.png">
 									<span class="name-user">Nombre</span>
 								</div>
 								
@@ -155,7 +155,7 @@
 			
 			<article class="Article-images">				
 					<figure class="Article-containner-images">
-						<img class="Img-Article" src="asset/image/cake4.jpg">
+						<img class="Img-Article" src="view/asset/image/cake4.jpg">
 					</figure>
 						<div class="Article-containner-text">					
 							<hgroup class="GroupTitle">
@@ -166,7 +166,7 @@
 							</p>	
 							<div class="Article-containner-user">
 								<div class="user"> 
-									<img class="icon-user-Article" src="asset/image/user.png">
+									<img class="icon-user-Article" src="view/asset/image/user.png">
 									<span class="name-user">Nombre</span>
 								</div>
 								
@@ -184,7 +184,7 @@
 			
 			<article class="Article-images">				
 					<figure class="Article-containner-images">
-						<img class="Img-Article" src="asset/image/cake4.jpg">
+						<img class="Img-Article" src="view/asset/image/cake4.jpg">
 					</figure>
 						<div class="Article-containner-text">					
 							<hgroup class="GroupTitle">
@@ -195,7 +195,7 @@
 							</p>	
 							<div class="Article-containner-user">
 								<div class="user"> 
-									<img class="icon-user-Article" src="asset/image/user.png">
+									<img class="icon-user-Article" src="view/asset/image/user.png">
 									<span class="name-user">Nombre</span>
 								</div>
 								
