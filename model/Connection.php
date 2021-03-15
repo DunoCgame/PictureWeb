@@ -1,6 +1,6 @@
 <?php
 //coneccion de base de datos
-include("../config/variables.php");
+include("config/variables.php");
 //verificacion login
 
 class MysqliConnect{
@@ -14,15 +14,15 @@ class MysqliConnect{
 	var $resultado;
 
 	function __construct(){
-		$this->server=ServerName;
-		$this->user=UserName;
-		$this->pass=PassWord;
-		$this->db=DataBase;
+			$this->server=ServerName;
+			$this->user=UserName;
+			$this->pass=PassWord;
+			$this->db=DataBase;
 	}
 	
 	//realizar Conexion
 	function Connection(){
-		$this->conn = new mysqli($this->server, $this->user, $this->pass, $this->db);	
+				$this->conn = new mysqli($this->server, $this->user, $this->pass, $this->db);	
 		
 			if($this->conn->connect_error){
 				  die("Connection failed: " . $this->conn->connect_error);
@@ -32,25 +32,26 @@ class MysqliConnect{
 	
 	//realizar consulta
 	function Query($sql){
-			$this->resultado = $this->conn->query($sql);
+				$this->resultado = $this->conn->query($sql);
 			
 	}
 	//obtener Resultado
 	function Get_result(){
-			return $this->resultado;
+				return $this->resultado;
 	}	
 	
 	//librerar Resultados
 	function Free_result(){
-			return $this->resultado->free();
+				return $this->resultado->free();
 	}
 	//cerrar Conexion
 	function Close_Connection(){
-			$this->conn->close();
+				$this->conn->close();
 		
 	}
 	
 }
+
 
 
 ?>

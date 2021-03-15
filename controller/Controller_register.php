@@ -22,6 +22,7 @@ class Valides_Registro{
 		}
 		
 		function Valides_de_Form(){
+			
 			if($this->FristName==Null){echo "FristName esta vacido";}
 			if($this->LastName==Null){echo "LastName esta vacido";}
 			if($this->UserName==Null){echo "UserName esta vacido";}
@@ -30,18 +31,17 @@ class Valides_Registro{
 			if($this->RePassWord!=$this->RePassWord){echo "The PassWord not identic";}
 			
 			
-if($this->FristName!=NULL && $this->LastName!=NULL && $this->UserName!=NULL && 
-	$this->Email!=NULL  && $this->PassWord!=NULL && $this->RePassWord==$this->PassWord){
+	if($this->FristName!=NULL && $this->LastName!=NULL && $this->UserName!=NULL && 
+		$this->Email!=NULL  && $this->PassWord!=NULL && $this->RePassWord==$this->PassWord){
 						
 						echo "datos validos pasando a valides";
 
-$connect = new MysqliConnect();
-$connect->Connection();
-// $connect->Query("SELECT * FROM `user");
-$connect->Query("SELECT `UserName`,`Email`, `PassWord` FROM `user` WHERE `UserName`='$this->UserName' OR `Email`='$this->Email' AND `PassWord`='$this->PassWord'");						
-$result = $connect->Get_result();		
+	$connect = new MysqliConnect();
+	$connect->Connection();
+	$connect->Query("SELECT `UserName`,`Email`, `PassWord` FROM `user` WHERE `UserName`='$this->UserName' OR `Email`='$this->Email' AND `PassWord`='$this->PassWord'");						
+	$result = $connect->Get_result();		
 						
-		$data=$result->fetch_assoc();
+	$data=$result->fetch_assoc();
 		
 	 if($this->user != $data['UserName']     && 	   
 		$this->password != $data['PassWord'] 	&&
@@ -49,13 +49,14 @@ $result = $connect->Get_result();
 
 			return "true";
 			
-	   }   else{
-				echo "<h2>Usuario ya Registrado</h2>"
+	   }   
+	   else{
+				echo "<h2>Usuario ya Registrado</h2>";
 		   }
 		   
 				} else{ echo "Datos invalidos"; }
 
-			}
+			}//cierre del metodo
 	
 	
 }
@@ -80,7 +81,6 @@ $connect->Query("INSERT INTO `user`(`UserName`, `FristName`, `SeconName`, `Email
 						
 $result = $connect->Get_result();
 
-echo $result ."<br>";
 
 		if($result==TRUE){
 			echo "datos ingresado";
@@ -88,15 +88,14 @@ echo $result ."<br>";
 			echo "ERRROR";
 		}
 
+$connect->Free_result();
+$connect->Close_Connection();
 
-mysql_free_result($result); // Liberar resultados
-		mysql_close($conn); // Cerrar Conexion
-			
-		
-	}
+
+			}
 	
-}
-}//cierre clase
+		}
+	}//cierre clase
 
 
 if(isset($_POST['submit'])){
@@ -111,16 +110,7 @@ if(isset($_POST['submit'])){
 		echo $fristname .$lastname .$user .$email .$pass .$Rpass ."<br>";
  $Register = new Registrar_user($fristname,$lastname,$user,$email,$pass,$Rpass);
  $Register->Save_new_user();
-
-
-
-
-
-
-
-
-
-		
+	
 }
 
 ?>

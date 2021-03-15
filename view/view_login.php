@@ -1,14 +1,5 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-		<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
-		<link rel="shortcut icon" href="view/asset/image/logo.png" >
-		<link rel="stylesheet"    href="view/asset/styles/iconos.css">
-		<link rel="stylesheet"    href="view/asset/styles/Normalize.css"> 
-		<link rel="stylesheet"    href="view/asset/styles/Login-Register.css"> 
-		<title>Picture</title>
-	</head>
 
 	<body id="body">
 		<section class="sectionLogin">
@@ -16,7 +7,7 @@
 				
 				<h2 class="title-login">Login</h2>
 				
-				<form class="form-login" action="./controller/Controller_login.php" method="post">
+				<form class="form-login" action="controller/Controller_login.php" method="post">
 				
 				<label class="login-user">User name:</label>
 				<div class="user-containner">
